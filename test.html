@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce Motors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #0f172a, #1e293b);
+            color: #e5e7eb;
+        }
+
+        header {
+            background-image: url('https://images.unsplash.com/photo-1571607387698-85c4b4ee9c0e');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: #facc15;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background-color: rgba(15, 23, 42, 0.95);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #facc15;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #facc15;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .models ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .models li {
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid #38bdf8;
+        }
+
+        .models strong {
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0f172a;
+            color: #94a3b8;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Veloce Motors</h1>
+        <p>Driving Innovation, Speed, and Style</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#models">Our Models</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="card">
+        <h2>About Us</h2>
+        <p>Veloce Motors is a premium automotive brand committed to crafting high-performance, elegant, and technologically advanced vehicles. Our design philosophy merges art with engineering, resulting in cars that not only move you but also move your soul.</p>
+    </section>
+
+    <section id="models" class="card models">
+        <h2>Our Models</h2>
+        <ul>
+            <li><strong>Veloce Strada GT</strong> – A grand tourer engineered for luxury and raw performance. Its V10 engine delivers power with refinement.</li>
+            <li><strong>Veloce Aero X</strong> – Our all-electric supercar. Experience breathtaking acceleration and unmatched aerodynamic efficiency.</li>
+            <li><strong>Veloce Terra SUV</strong> – A bold blend of utility and elegance. Perfect for family adventures without compromise.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Contact Us</h2>
+        <p>Interested in experiencing the thrill of Veloce? Connect with us at <a href="mailto:sales@velocemotors.com">sales@velocemotors.com</a> or visit any of our showrooms around the globe.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Veloce Motors. Crafted with passion and precision.
+    </footer>
+</body>
+</html>
+

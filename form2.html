@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="checkform()" action="" id="form2">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+        
+        <button type="submit" onclick="">Sign Up</button>  
+    </form>
+    <script>
+        function checkform(){
+            let name = document.getElementById('name').value;
+            let age = document.getElementById('age').value;
+        }
+        
+        if (age<18){
+            alert("Form Submitted Successfully ")
+        }
+        else{
+            alert("Form Failed")
+        }
+    </script>
+</body>
+</html>
+<!-- Create a form with name and age only you can comment out the previous form or 
+ create a new form in a new page called form2.html create a function that, 
+ when submit is clicked Alert if name is empty,alert if age is less than 18 
+ show "Form submitted successfully" if all check pass -->
+        

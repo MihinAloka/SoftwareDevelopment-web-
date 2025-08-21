@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card" ondblclick="toggleFavourite()">
+        <h3>Profile</h3>
+        <input type="text" id="name" placeholder="Name" 
+               onfocus="showHint('Enter full name')" 
+               onblur="resetInput('name')">
+        <input type="number" id="age" placeholder="Age" 
+               onfocus="showHint('Enter your age')" 
+               onblur="resetInput('age')">
+        <input type="text" id="email" placeholder="Email" 
+               onfocus="showHint('Enter valid email')" 
+               onblur="resetInput('email')">
+        <p id="hint"></p>
+        <button onclick="validate()">Submit</button>
+        <p id="msg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

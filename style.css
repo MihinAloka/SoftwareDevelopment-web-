@@ -1,0 +1,26 @@
+#card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#card:hover {
+    box-shadow: 0 0 10px blue;
+}
+
+#card.favourite {
+    background-color: yellow;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    width: 90%;
+}
+
+#hint {
+    font-size: 12px;
+    color: gray;
+}
+    

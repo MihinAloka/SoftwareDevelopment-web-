@@ -1,0 +1,29 @@
+<html>
+<body>
+<form onsubmit="return checkForm()">
+Name: <input type="text" id="name">
+Age: <input type="number" id="age">
+<input type="submit" value="Submit">
+</form>
+
+<script>
+function checkForm() {
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+
+    if (name == "") {
+        alert("Name cannot be empty");
+        return false;
+    }
+
+    if (age < 18) {
+        alert("Age must be 18 or older");
+        return false;
+    }
+
+    alert("Form submitted successfully");
+    return true;
+}
+</script>
+</body>
+</html>
